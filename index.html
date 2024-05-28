@@ -6,8 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Julian Project</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="shortcut icon" href="./src/assets/image/svg/logo.svg" type="image/x-icon">
+
     <link rel="stylesheet" href="./src/output.css">
+
     <link rel="stylesheet" href="./src/input.css">
 </head>
 
@@ -651,62 +662,150 @@
         <!-- section-5 -->
         <section class="py-5 relative">
             <div class="container mx-auto px-3 relative z-[1] sm:my-24 my-8 py-4">
-                <div
-                    class="bg-[linear-gradient(146.26deg,_rgba(238,_221,_191,_0.32)_6.74%,_rgba(199,_138,_17,_0.32)_110.03%)] max-w-[1000px] bg-white shadow-[_0px_0px_20px_4px_#D8D8D840] w-full p-[1px] rounded-2xl">
-                    <div class="px-7 py-4 bg-white rounded-2xl">
-                        <h2 class="text-[#1A1A1A] font-normal text-xl italic">
-                            Donate to The Julian Project. Only with your support can we support the historical research
-                            of distinguished high school
-                            student.
-                        </h2>
-                        <div class="flex justify-between gap-3 mt-3 items-end mb-5">
-                            <button
-                                class="flex justify-center items-center duration-300 ease-linear z-[1] bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] text-transparent bg-clip-text gap-2 font-bold text-xl w-[198px] h-14 rounded-sm relative after:content-[''] after:absolute after:h-[2px] after:w-full after:bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] after:left-0 after:bottom-0 after:rounded-sm group hover:shadow-[0_0_10px_white] overflow-hidden hover:text-white">Donate Now
-                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15 7L9 13M15 7L9 1M15 7L1 7" stroke="url(#paint0_linear122421)"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="group-hover:stroke-white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear122421" x1="15" y1="1" x2="0.694889" y2="11.925"
-                                            gradientUnits="userSpaceOnUse">
-                                            <stop offset="0" stop-color="#F4EAD8" />
-                                            <stop offset="1" stop-color="#E0B764" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                                <span
-                                    class="absolute top-0 left-0 bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] flex h-full w-full z-[-3] translate-y-full duration-300 ease-linear group-hover:translate-y-0"></span>
-                            </button>
-                            <span class="flex">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity="0.4"
-                                        d="M20.0125 0C8.94424 0 0 8.97751 0 20.0261C0 28.7475 5.54544 36.1638 13.3416 38.901V21.585C14.2112 21.4581 15.0807 21.3811 16 21.3811V39.642C16.8673 39.821 17.7639 39.9501 18.6584 40V21.585C19.5777 21.7391 20.497 21.943 21.3167 22.2262V40C22.2361 39.9501 23.1305 39.821 24 39.642V23.4272C24.3306 23.6062 24.6906 23.8101 24.9963 24.0412C25.61 24.4514 26.1715 24.9113 26.6833 25.4234V38.901C30.5689 37.546 33.8908 34.9878 36.2683 31.7136C38.6187 28.4144 40 24.3992 40 20.0261C40 8.97751 31.0535 0 20.0125 0ZM28.0125 20.051H12.0125V16.0358C18.1466 16.0358 23.7441 17.0079 28.0125 18.5691V20.051ZM30.6708 14.7057H9.32918V10.7155H30.6708V14.7057Z"
-                                        fill="url(#paint0_linear_41260_4828)" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_41260_4828" x1="0" y1="0" x2="29.6532" y2="45.2991"
-                                            gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#F4EAD8" />
-                                            <stop offset="1" stop-color="#E0B764" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </span>
+                <div class="flex justify-center">
+                    <div
+                        class="mb-5 bg-[linear-gradient(146.26deg,_rgba(238,_221,_191,_0.32)_6.74%,_rgba(199,_138,_17,_0.32)_110.03%)] max-w-[1000px] bg-white shadow-[_0px_0px_20px_4px_#D8D8D840] w-full p-[1px] rounded-2xl">
+                        <div class="px-7 py-4 bg-white rounded-2xl">
+                            <h2 class="text-[#1A1A1A] font-normal text-xl italic">
+                                Donate to The Julian Project. Only with your support can we support the historical
+                                research
+                                of distinguished high school
+                                student.
+                            </h2>
+                            <div class="flex justify-between gap-3 mt-3 items-end">
+                                <button
+                                    class="flex justify-center items-center duration-300 ease-linear z-[1] bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] text-transparent bg-clip-text gap-2 font-bold text-xl w-[198px] h-14 rounded-sm relative after:content-[''] after:absolute after:h-[2px] after:w-full after:bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] after:left-0 after:bottom-0 after:rounded-sm group hover:shadow-[0_0_10px_white] overflow-hidden hover:text-white">Donate
+                                    Now
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 7L9 13M15 7L9 1M15 7L1 7" stroke="url(#paint0_linear122421)"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="group-hover:stroke-white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear122421" x1="15" y1="1" x2="0.694889"
+                                                y2="11.925" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="#F4EAD8" />
+                                                <stop offset="1" stop-color="#E0B764" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <span
+                                        class="absolute top-0 left-0 bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] flex h-full w-full z-[-3] translate-y-full duration-300 ease-linear group-hover:translate-y-0"></span>
+                                </button>
+                                <span class="flex">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.4"
+                                            d="M20.0125 0C8.94424 0 0 8.97751 0 20.0261C0 28.7475 5.54544 36.1638 13.3416 38.901V21.585C14.2112 21.4581 15.0807 21.3811 16 21.3811V39.642C16.8673 39.821 17.7639 39.9501 18.6584 40V21.585C19.5777 21.7391 20.497 21.943 21.3167 22.2262V40C22.2361 39.9501 23.1305 39.821 24 39.642V23.4272C24.3306 23.6062 24.6906 23.8101 24.9963 24.0412C25.61 24.4514 26.1715 24.9113 26.6833 25.4234V38.901C30.5689 37.546 33.8908 34.9878 36.2683 31.7136C38.6187 28.4144 40 24.3992 40 20.0261C40 8.97751 31.0535 0 20.0125 0ZM28.0125 20.051H12.0125V16.0358C18.1466 16.0358 23.7441 17.0079 28.0125 18.5691V20.051ZM30.6708 14.7057H9.32918V10.7155H30.6708V14.7057Z"
+                                            fill="url(#paint0_linear_41260_4828)" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_41260_4828" x1="0" y1="0" x2="29.6532"
+                                                y2="45.2991" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#F4EAD8" />
+                                                <stop offset="1" stop-color="#E0B764" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <div class="sec5-slider">
-                        <div class="slider-box">
-                
+                <div class="relative flex justify-center">
+                    <div class="sec5-slider w-full max-w-[1000px]">
+                        <div
+                            class="slider-box p-[1px] rounded-3xl w-full bg-[linear-gradient(146.26deg,_rgba(238,_221,_191,_0.32)_6.74%,_rgba(199,_138,_17,_0.32)_110.03%)]">
+                            <div class="bg-white px-12 py-14 rounded-3xl">
+                                <div class="flex flex-col-reverse lg:flex-row flex-wrap -mx-">
+                                    <div class="w-full lg:w-8/12 px-3">
+                                        <h2 class="font-bold text-5xl text-[#090909]">Prize-Winning Projects</h2>
+                                        <p class="mt-4 font-bold text-2xl">The Story of <span class="bg-clip-text text-transparent bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)]">Civilization</span></p>
+                                        <p class="text-[#1A1A1A] font-normal text-base opacity-70 mt-4">
+                                            Choose your topic. Find expert guidance. Create a thesis and bring it to life. World-Class. These books cover various
+                                            periods and topics in history, offering different perspectives and insights into different civilizations and events.
+                                        </p>
+                                        <p class="text-[#1A1A1A] font-normal text-base mt-4">
+                                            Will Durant & Ariel Durant
+                                        </p>
+                                        <button
+                                            class="flex justify-center items-center mt-12 duration-300 ease-linear z-[1] bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] text-transparent bg-clip-text gap-2 font-bold text-xl w-[198px] h-14 rounded-sm relative after:content-[''] after:absolute after:h-[2px] after:w-full after:bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] after:left-0 after:bottom-0 after:rounded-sm group hover:shadow-[0_0_10px_white] overflow-hidden hover:text-white">Read More
+                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15 7L9 13M15 7L9 1M15 7L1 7" stroke="url(#paint0_linear12299)" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-white" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear12299" x1="15" y1="1" x2="0.694889" y2="11.925"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0" stop-color="#F4EAD8" />
+                                                        <stop offset="1" stop-color="#E0B764" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                            <span
+                                                class="absolute top-0 left-0 bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] flex h-full w-full z-[-3] translate-y-full duration-300 ease-linear group-hover:translate-y-0"></span>
+                                        </button>
+                                    </div>
+                                    <div class="w-full lg:w-4/12 px-3">
+                                        <div class="p-[18px] shadow-[0px_0px_14.14px_2.83px_#D8D8D840] rounded-md h-full">
+                                            <img src="./src/assets/image/png/Will-ariel-durants.png" alt="Will-ariel-durants" class="w-full h-full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="slider-box p-[1px] rounded-3xl w-full bg-[linear-gradient(146.26deg,_rgba(238,_221,_191,_0.32)_6.74%,_rgba(199,_138,_17,_0.32)_110.03%)]">
+                            <div class="bg-white px-12 py-14 rounded-3xl">
+                                <div class="flex flex-col-reverse lg:flex-row flex-wrap -mx-">
+                                    <div class="w-full lg:w-8/12 px-3">
+                                        <h2 class="font-bold text-5xl text-[#090909]">Prize-Winning Projects</h2>
+                                        <p class="mt-4 font-bold text-2xl">The Story of <span
+                                                class="bg-clip-text text-transparent bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)]">Civilization</span>
+                                        </p>
+                                        <p class="text-[#1A1A1A] font-normal text-base opacity-70 mt-4">
+                                            Choose your topic. Find expert guidance. Create a thesis and bring it to life. World-Class. These
+                                            books cover various
+                                            periods and topics in history, offering different perspectives and insights into different
+                                            civilizations and events.
+                                        </p>
+                                        <p class="text-[#1A1A1A] font-normal text-base mt-4">
+                                            Will Durant & Ariel Durant
+                                        </p>
+                                        <button
+                                            class="flex justify-center items-center mt-12 duration-300 ease-linear z-[1] bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] text-transparent bg-clip-text gap-2 font-bold text-xl w-[198px] h-14 rounded-sm relative after:content-[''] after:absolute after:h-[2px] after:w-full after:bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] after:left-0 after:bottom-0 after:rounded-sm group hover:shadow-[0_0_10px_white] overflow-hidden hover:text-white">Read
+                                            More
+                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15 7L9 13M15 7L9 1M15 7L1 7" stroke="url(#paint0_linear1288)" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-white" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear1288" x1="15" y1="1" x2="0.694889" y2="11.925"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0" stop-color="#F4EAD8" />
+                                                        <stop offset="1" stop-color="#E0B764" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                            <span
+                                                class="absolute top-0 left-0 bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] flex h-full w-full z-[-3] translate-y-full duration-300 ease-linear group-hover:translate-y-0"></span>
+                                        </button>
+                                    </div>
+                                    <div class="w-full lg:w-4/12 px-3">
+                                        <div class="p-[18px] shadow-[0px_0px_14.14px_2.83px_#D8D8D840] rounded-md h-full">
+                                            <img src="./src/assets/image/png/Will-ariel-durants.png" alt="Will-ariel-durants"
+                                                class="w-full h-full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div
-                        class="prev p-[2px] bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] rounded-full w-10 h-10 flex justify-center items-center">
+                        class="prev1 pb-[1.8px] pt-[2px] pl-[1.8px] pr-[2px] bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] group rounded-full w-10 h-10 hidden xl:flex justify-center items-center cursor-pointer absolute top-1/2 left-0 -translate-y-1/2">
                         <span
-                            class="bg-white rounded-full grid place-items-center w-full h-full">
-                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 1L1 7.5L7 14" stroke="url(#paint0_linear_55391_546)" stroke-width="2" stroke-linecap="round"
+                            class="bg-white rounded-full grid place-items-center w-full h-full duration-300 ease-linear hover:bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)]">
+                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 1L1 7.5L7 14" stroke="url(#paint0_linear_55391_546)"
+                                    class="group-hover:stroke-white" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                                 <defs>
                                     <linearGradient id="paint0_linear_55391_546" x1="1" y1="1" x2="9.89465" y2="3.68732"
@@ -718,12 +817,43 @@
                             </svg>
                         </span>
                     </div>
+                    <div
+                        class="next1 pb-[1.8px] pt-[2px] pl-[1.8px] pr-[2px] bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)] rounded-full w-10 h-10 hidden xl:flex justify-center items-center group cursor-pointer absolute top-1/2 right-0 -translate-y-1/2">
+                        <span
+                            class="bg-white rounded-full grid place-items-center w-full h-full duration-300 ease-linear hover:bg-[linear-gradient(146.79deg,_#F4EAD8_0%,_#E0B764_97.77%)]">
+                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7.5L0.999999 14" stroke="url(#paint0_linear_55391)"
+                                    class="group-hover:stroke-white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_55391" x1="1" y1="1" x2="9.89465" y2="3.68732"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#F4EAD8" />
+                                        <stop offset="1" stop-color="#E0B764" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
                 </div>
             </div>
+            <img src="./src/assets/image/png/sec5-bg-layer.png" alt="sec5-bg-layer" class="absolute right-0 bottom-0">
+            <img src="./src/assets/image/png/sec5-bottom-right.png" alt="sec5-bottom-right" class="absolute right-0 bottom-0">
+            <img src="./src/assets/image/png/sec5-top-left.png" alt="sec5-top-left" class="absolute top-0 left-0">
         </section>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./src/js/app.js"></script>
 </body>
 

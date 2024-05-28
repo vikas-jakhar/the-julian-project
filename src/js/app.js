@@ -56,3 +56,15 @@ headingsec33.addEventListener("click", function () {
     text2.classList.add("hidden");
     text3.classList.remove("hidden");
 });
+
+
+
+$('.sec5-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    prevArrow: ".prev1",
+    nextArrow: ".next1",
+    dots: false,
+    infinite: true,
+});
