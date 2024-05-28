@@ -67,4 +67,12 @@ $('.sec5-slider').slick({
     nextArrow: ".next1",
     dots: false,
     infinite: true,
+    responsive: [
+        {
+            breakpoint: 1280,
+            settings: {
+                arrows: false,
+            }
+        }
+    ]
 });
